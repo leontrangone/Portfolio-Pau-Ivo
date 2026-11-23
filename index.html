@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>León Trangone — Básquet, desde los 5</title>
+<meta name="description" content="Portfolio de León Trangone: juego al básquet desde los 5 años. La historia de una pasión que empezó de chico.">
+<meta name="theme-color" content="#0E0E0F">
+<meta property="og:title" content="León Trangone — Básquet, desde los 5">
+<meta property="og:description" content="Juego al básquet desde los 5 años. Esta es la historia de una pasión que empezó de chico.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="https://cdn.jsdelivr.net/npm/@fontsource/anton@5.3.0/files/anton-latin-400-normal.woff2">
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#historia">Saltar al contenido</a>
+
+<!-- pelota reutilizable -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="ball" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="47" fill="#FF5A1F"/>
+    <g fill="none" stroke="#0E0E0F" stroke-width="3.2" stroke-linecap="round">
+      <circle cx="50" cy="50" r="47"/>
+      <path d="M50 3V97M3 50H97"/>
+      <path d="M17 17Q40 50 17 83M83 17Q60 50 83 83"/>
+    </g>
+  </symbol>
+</svg>
+
+<div class="loader" aria-hidden="true">
+  <div class="loader__stage">
+    <svg class="loader__ball"><use href="#ball"/></svg>
+    <span class="loader__shadow"></span>
+  </div>
+  <p class="loader__name mono">León Trangone</p>
+</div>
+
+<div class="progress" aria-hidden="true"><span></span></div>
+<div class="cursor" aria-hidden="true"></div>
+
+<header class="top">
+  <a class="brand" href="#inicio" aria-label="León Trangone, ir al inicio">LT<span>14</span></a>
+  <nav aria-label="Secciones">
+    <a href="#historia">Historia</a>
+    <a href="#cancha">En cancha</a>
+    <a href="#valores">Valores</a>
+    <a href="#numero">Mi número</a>
+  </nav>
+</header>
+
+<button class="to-top" type="button" aria-label="Volver arriba"><svg aria-hidden="true"><use href="#ball"/></svg></button>
+
+<main>
+
+<!-- ======================= PORTADA ======================= -->
+<section class="hero" id="inicio">
+  <svg class="hero__court" viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <rect class="draw" pathLength="1" x="40" y="40" width="1320" height="720"/>
+    <path class="draw" pathLength="1" d="M700 40V760"/>
+    <circle class="draw" pathLength="1" cx="700" cy="400" r="120"/>
+    <rect class="draw" pathLength="1" x="40" y="270" width="330" height="260"/>
+    <rect class="draw" pathLength="1" x="1030" y="270" width="330" height="260"/>
+    <path class="draw" pathLength="1" d="M370 270A130 130 0 0 1 370 530"/>
+    <path class="draw" pathLength="1" d="M1030 270A130 130 0 0 0 1030 530"/>
+    <path class="draw" pathLength="1" d="M40 120H190A280 280 0 0 1 190 680H40"/>
+    <path class="draw" pathLength="1" d="M1360 120H1210A280 280 0 0 0 1210 680H1360"/>
+    <path class="draw dash" d="M370 270A130 130 0 0 0 370 530"/>
+    <path class="draw dash" d="M1030 270A130 130 0 0 1 1030 530"/>
+  </svg>
+
+  <div class="hero__ball" aria-hidden="true"><svg><use href="#ball"/></svg></div>
+
+  <div class="hero__inner">
+    <p class="eyebrow"><span>Portfolio</span><span>León Trangone</span><span>18 años</span></p>
+    <h1 class="hero__title" data-split aria-label="Básquet">Básquet</h1>
+    <div class="hero__foot">
+      <p class="hero__lead">Juego desde los <strong>5 años</strong>. Esta es la historia de una pasión que empezó de chico y que todavía no suelto.</p>
+      <p class="hand hero__note" aria-hidden="true">desde los 5
+        <svg viewBox="0 0 56 36"><path d="M2 8C20 2 40 8 48 26M48 26L38 22M48 26L50 15"/></svg>
+      </p>
+      <a class="hero__cue" href="#historia"><span>Scroll</span><i></i></a>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <div class="marquee__group">
+      <span>Desde los 5</span><i><svg><use href="#ball"/></svg></i>
+      <span>Pasión</span><i><svg><use href="#ball"/></svg></i>
+      <span>Equipo</span><i><svg><use href="#ball"/></svg></i>
+      <span>Constancia</span><i><svg><use href="#ball"/></svg></i>
+      <span>Volver a intentarlo</span><i><svg><use href="#ball"/></svg></i>
+    </div>
+    <div class="marquee__group">
+      <span>Desde los 5</span><i><svg><use href="#ball"/></svg></i>
+      <span>Pasión</span><i><svg><use href="#ball"/></svg></i>
+      <span>Equipo</span><i><svg><use href="#ball"/></svg></i>
+      <span>Constancia</span><i><svg><use href="#ball"/></svg></i>
+      <span>Volver a intentarlo</span><i><svg><use href="#ball"/></svg></i>
+    </div>
+  </div>
+</div>
+
+<!-- ======================= 01 · HISTORIA ======================= -->
+<section class="story" id="historia">
+  <div class="story__label">
+    <span class="mono">01 — Mi historia</span>
+    <span class="hand" aria-hidden="true">desde chiquito</span>
+  </div>
+  <p class="story__text" data-words>Tenía <em>5 años</em> cuando agarré una pelota de básquet por primera vez y no la solté más. Crecí entre entrenamientos, vestuarios y partidos de fin de semana. No soy el mejor de la cancha y nunca me hizo falta serlo: lo que me atrapó fue <em>el juego</em>. Aprender, equivocarme, volver a intentar y hacerlo siempre con otros al lado.</p>
+</section>
+
+<!-- ======================= MARCADOR ======================= -->
+<section class="stats" aria-label="Mis números">
+  <div class="stats__bar"><span>Marcador</span><b>Mis números</b></div>
+  <div class="stats__grid">
+    <div class="stat"><span class="stat__n" data-count="5">5</span><span class="stat__l">años tenía cuando empecé a jugar</span></div>
+    <div class="stat"><span class="stat__n" data-count="13">13</span><span class="stat__l">años jugando al básquet</span></div>
+    <div class="stat"><span class="stat__n" data-count="14">14</span><span class="stat__l">el número que llevo en la espalda</span></div>
+  </div>
+</section>
+
+<!-- ======================= 02 · EN CANCHA ======================= -->
+<section class="gallery" id="cancha" aria-label="Fotos en cancha">
+  <div class="gallery__track">
+    <div class="panel panel--intro">
+      <span class="mono">02 — En cancha</span>
+      <h2>En<br>cancha</h2>
+      <span class="hand" aria-hidden="true"><span class="hint-h">seguí hacia el costado →</span><span class="hint-v">seguí bajando ↓</span></span>
+    </div>
+
+    <figure class="polaroid" style="--r:-3deg;--ar:351/463;--tr:-5deg">
+      <span class="tape" aria-hidden="true"></span>
+      <div class="polaroid__img"><img src="images/foto-1.jpg" alt="Salto para tirar al aro durante un partido" width="351" height="463" decoding="async" data-cursor onerror="this.closest('.polaroid').classList.add('is-missing')"></div>
+      <figcaption class="hand">el tiro</figcaption>
+    </figure>
+
+    <div class="panel panel--quote">
+      <p>Entrenar cuando <em>nadie</em> mira.</p>
+    </div>
+
+    <figure class="polaroid" style="--r:2.5deg;--ar:251/463;--tr:3deg">
+      <span class="tape" aria-hidden="true"></span>
+      <div class="polaroid__img"><img src="images/foto-2.jpg" alt="Disputa de la pelota en el aire, rodeado de otros jugadores" width="251" height="463" decoding="async" data-cursor onerror="this.closest('.polaroid').classList.add('is-missing')"></div>
+      <figcaption class="hand">pelear cada pelota</figcaption>
+    </figure>
+
+    <figure class="polaroid" style="--r:-2deg;--ar:255/463;--tr:-3deg">
+      <span class="tape" aria-hidden="true"></span>
+      <div class="polaroid__img"><img src="images/foto-3.jpg" alt="De más chico, con la camiseta número 14" width="255" height="463" decoding="async" data-cursor onerror="this.closest('.polaroid').classList.add('is-missing')"></div>
+      <figcaption class="hand">de chico, con el 14</figcaption>
+    </figure>
+
+    <div class="panel panel--end">
+      <p>Y lo que sigue también se juega.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 03 · VALORES ======================= -->
+<section class="values" id="valores">
+  <div class="values__head">
+    <span class="mono">03 — Lo que me dejó</span>
+    <h2>Lo que me dejó<br><em>el básquet</em></h2>
+  </div>
+  <ul class="values__list">
+    <li class="value" data-cursor><span class="value__n">01</span><span class="value__w">Constancia</span><p class="value__t">Aparecer todos los días, incluso cuando no hay ganas.</p></li>
+    <li class="value" data-cursor><span class="value__n">02</span><span class="value__w">Equipo</span><p class="value__t">Nada se gana solo. Se aprende a pasar la pelota y a confiar.</p></li>
+    <li class="value" data-cursor><span class="value__n">03</span><span class="value__w">Club</span><p class="value__t">Un lugar al que pertenecer, con gente que te espera.</p></li>
+    <li class="value" data-cursor><span class="value__n">04</span><span class="value__w">Entrenar</span><p class="value__t">Lo que se ve el sábado se construye durante la semana.</p></li>
+    <li class="value" data-cursor><span class="value__n">05</span><span class="value__w">Volver</span><p class="value__t">Después de perder, volver a la cancha y probar de nuevo.</p></li>
+  </ul>
+</section>
+
+<!-- ======================= 04 · MI NÚMERO ======================= -->
+<section class="number" id="numero">
+  <div class="number__bg" aria-hidden="true">14</div>
+  <div class="number__stage">
+    <div class="jersey">
+      <div class="jersey__tilt">
+        <svg viewBox="0 0 400 480" role="img" aria-label="Camiseta naranja con el apellido Trangone y el número 14 en la espalda">
+          <defs>
+            <path id="nameArc" d="M92 172Q200 130 308 172"/>
+            <pattern id="mesh" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="#0E0E0F" fill-opacity=".12"/></pattern>
+          </defs>
+          <path id="body" d="M120 20C118 80 96 128 56 150L56 462L344 462L344 150C304 128 282 80 280 20L238 20Q200 80 162 20Z" fill="#FF5A1F" stroke="#0E0E0F" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M120 20C118 80 96 128 56 150L56 462L344 462L344 150C304 128 282 80 280 20L238 20Q200 80 162 20Z" fill="url(#mesh)"/>
+          <g fill="none" stroke="#F2ECDD" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M120 20C118 80 96 128 56 150"/>
+            <path d="M280 20C282 80 304 128 344 150"/>
+            <path d="M162 20Q200 80 238 20"/>
+            <path d="M64 438H336"/>
+          </g>
+          <text font-family="Anton,Impact,sans-serif" font-size="40" letter-spacing="6" fill="#F2ECDD"><textPath href="#nameArc" startOffset="50%" text-anchor="middle">TRANGONE</textPath></text>
+          <text x="204" y="396" text-anchor="middle" font-family="Anton,Impact,sans-serif" font-size="206" fill="#0E0E0F" fill-opacity=".28">14</text>
+          <text x="200" y="392" text-anchor="middle" font-family="Anton,Impact,sans-serif" font-size="206" fill="#F2ECDD">14</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="number__copy">
+    <span class="mono">04 — Mi número</span>
+    <h2>El <em>14</em><br>va atrás</h2>
+    <p>Es el número que llevo en la espalda. Cada vez que me pongo la camiseta sé a qué vengo: a jugar, a darlo todo y a hacerlo junto a mis compañeros.</p>
+    <span class="hand" aria-hidden="true">y adelante, el equipo.</span>
+  </div>
+</section>
+
+<!-- ======================= FINAL · EL TIRO ======================= -->
+<section class="outro" id="contacto">
+  <div class="outro__copy">
+    <span class="mono" style="color:var(--gris)">Fin del partido</span>
+    <h2>Nos vemos<br>en la cancha<span>.</span></h2>
+    <p>Gracias por recorrer mi historia. Esto es lo que me mueve desde los 5 años.</p>
+    <div class="outro__btns">
+      <button class="btn" type="button" id="replay">Tirar otra vez</button>
+      <a class="btn btn--ghost" href="#inicio">Volver arriba</a>
+    </div>
+  </div>
+
+  <svg class="hoop" viewBox="0 0 1000 560" role="img" aria-label="Una pelota de básquet entra limpia en el aro">
+    <path class="floor" d="M30 520H970"/>
+    <path d="M862 215H930V520" stroke="#3A3B3F" stroke-width="14" fill="none" stroke-linejoin="round"/>
+    <rect x="846" y="110" width="16" height="210" fill="#F2ECDD"/>
+    <rect x="828" y="194" width="20" height="10" fill="#FF5A1F"/>
+    <path class="rim" d="M708 200A62 13 0 0 1 832 200"/>
+    <use id="shotBall" href="#ball" width="70" height="70" transform="translate(585 450)"/>
+    <path class="rim" d="M708 200A62 13 0 0 0 832 200"/>
+    <g class="net" id="net">
+      <line x1="708" y1="207" x2="736" y2="305"/>
+      <line x1="728.7" y1="210" x2="747.3" y2="305"/>
+      <line x1="749.3" y1="212" x2="758.7" y2="305"/>
+      <line x1="770" y1="213" x2="770" y2="305"/>
+      <line x1="790.7" y1="212" x2="781.3" y2="305"/>
+      <line x1="811.3" y1="210" x2="792.7" y2="305"/>
+      <line x1="832" y1="207" x2="804" y2="305"/>
+      <polyline points="717.2,239 734.8,239 752.4,239 770,239 787.6,239 805.2,239 822.8,239"/>
+      <polyline points="726.5,272 741,272 755.5,272 770,272 784.5,272 799,272 813.5,272"/>
+      <polyline points="736,305 747.3,305 758.7,305 770,305 781.3,305 792.7,305 804,305"/>
+    </g>
+    <text class="hoop__swish" id="swish" x="690" y="130" transform="rotate(-8 690 130)">swish.</text>
+  </svg>
+</section>
+
+</main>
+
+<footer class="foot">
+  <span>León Trangone — Portfolio 2026</span>
+  <span>Hecho a mano, con pasión por el juego</span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.28/dist/lenis.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

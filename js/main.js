@@ -284,6 +284,21 @@
     scrollTrigger: { trigger: '.values__list', start: 'top 82%' }
   });
 
+  /* ---------- más de mí ---------- */
+  gsap.from('.more__head > *', {
+    y: 40, opacity: 0, duration: 0.9, stagger: 0.12, ease: 'power3.out',
+    scrollTrigger: { trigger: '.more__head', start: 'top 82%' }
+  });
+  gsap.utils.toArray('.shot').forEach((el) => {
+    gsap.from(el, {
+      y: 70, opacity: 0, duration: 0.9, ease: 'power3.out',
+      scrollTrigger: { trigger: el, start: 'top 90%' }
+    });
+    const img = el.querySelector('img');
+    gsap.fromTo(img, { yPercent: -6 }, { yPercent: 6, ease: 'none',
+      scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: true } });
+  });
+
   /* ---------- mi número: la camiseta gira y sigue al mouse ---------- */
   const stage = $('.number__stage');
   const jersey = $('.jersey');

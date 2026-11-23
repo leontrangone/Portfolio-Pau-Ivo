@@ -234,6 +234,22 @@ body::after{
 
 .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px 24px;padding:22px var(--pad) 30px;border-top:1px solid var(--linea);color:var(--gris);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase}
 
+/* ---------- 05 · más de mí ---------- */
+.more{padding:clamp(90px,13vw,200px) var(--pad);background:var(--asfalto)}
+.more__head{display:flex;flex-direction:column;gap:18px;margin-bottom:clamp(36px,6vw,90px);max-width:60rem}
+.more__head .mono{color:var(--gris)}
+.more__head h2{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(2.6rem,7vw,7rem);line-height:.95}
+.more__head h2 em{font-style:normal;color:var(--naranja)}
+.more__head p{color:var(--gris);max-width:34rem}
+.more__grid{columns:3;column-gap:clamp(14px,2.4vw,36px)}
+.shot{break-inside:avoid;margin:0 0 clamp(14px,2.4vw,36px);transform:rotate(var(--r,0deg));transition:transform .5s var(--ease)}
+.shot__img{overflow:hidden;background:var(--asfalto-2);border:1px solid var(--linea)}
+.shot__img img{display:block;width:100%;height:auto;transform:scale(1.12);transition:transform .8s var(--ease),filter .4s}
+.shot figcaption{font-size:clamp(1.5rem,2vw,2rem);margin-top:10px}
+.shot:hover{transform:rotate(0deg) translateY(-6px)}
+@media (max-width:899px){.more__grid{columns:2}}
+@media (max-width:480px){.more__grid{columns:1}}
+
 /* ---------- celulares y tablets ---------- */
 @media (max-width:899px){
   .story{grid-template-columns:1fr}

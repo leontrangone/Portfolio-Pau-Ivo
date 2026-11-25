@@ -405,11 +405,11 @@
   if (fine) {
     const ring = $('.cursor');
     if (ring) {
-      const xTo = gsap.quickTo(ring, 'x', { duration: 0.35, ease: 'power3' });
-      const yTo = gsap.quickTo(ring, 'y', { duration: 0.35, ease: 'power3' });
+      const xTo = gsap.quickTo(ring, 'x', { duration: 0.12, ease: 'power3' });
+      const yTo = gsap.quickTo(ring, 'y', { duration: 0.12, ease: 'power3' });
       let seen = false;
       addEventListener('pointermove', (e) => {
-        if (!seen) { seen = true; gsap.set(ring, { x: e.clientX, y: e.clientY }); }
+        if (!seen) { seen = true; gsap.set(ring, { x: e.clientX, y: e.clientY }); d.documentElement.classList.add('has-dot'); }
         ring.classList.add('is-on');
         xTo(e.clientX); yTo(e.clientY);
       }, { passive: true });

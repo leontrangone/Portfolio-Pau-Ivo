@@ -284,6 +284,32 @@
     scrollTrigger: { trigger: '.values__list', start: 'top 82%' }
   });
 
+  /* ---------- evolución: la línea se dibuja y las barras se llenan ---------- */
+  gsap.from('.evo__head > *', {
+    y: 40, opacity: 0, duration: 0.9, stagger: 0.12, ease: 'power3.out',
+    scrollTrigger: { trigger: '.evo__head', start: 'top 82%' }
+  });
+  const evoTl = gsap.timeline({ scrollTrigger: { trigger: '.evo__chart', start: 'top 75%' } });
+  evoTl.from('.evo__grid, .evo__ylab, .evo__xlab', { opacity: 0, duration: 0.6 })
+    .from('.evo__line', { strokeDasharray: 1, strokeDashoffset: 1, duration: 1.8, ease: 'power2.inOut' }, 0.1)
+    .from('.evo__area', { opacity: 0, duration: 1.2 }, 0.8)
+    .from('.evo__pt', { scale: 0, opacity: 0, transformOrigin: '50% 50%', duration: 0.5, stagger: 0.55, ease: 'back.out(2)' }, 0.5);
+  gsap.from('.era', {
+    y: 60, opacity: 0, duration: 0.9, stagger: 0.14, ease: 'power3.out',
+    scrollTrigger: { trigger: '.evo__cards', start: 'top 85%' }
+  });
+  gsap.utils.toArray('.era').forEach((card) => {
+    gsap.from(card.querySelectorAll('.bar__t i'), {
+      scaleX: 0, duration: 1.2, stagger: 0.12, ease: 'power3.out',
+      scrollTrigger: { trigger: card, start: 'top 80%' }
+    });
+    card.querySelectorAll('.bar__v').forEach((el) => {
+      const end = parseFloat(el.dataset.count), pre = el.dataset.pre ? '≈ ' : '', o = { v: 0 };
+      gsap.to(o, { v: end, duration: 1.3, ease: 'power2.out', scrollTrigger: { trigger: card, start: 'top 80%' },
+        onUpdate: () => { el.textContent = pre + Math.round(o.v); } });
+    });
+  });
+
   /* ---------- más de mí ---------- */
   gsap.from('.more__head > *', {
     y: 40, opacity: 0, duration: 0.9, stagger: 0.12, ease: 'power3.out',

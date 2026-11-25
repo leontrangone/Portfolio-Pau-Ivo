@@ -234,7 +234,34 @@ body::after{
 
 .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px 24px;padding:22px var(--pad) 30px;border-top:1px solid var(--linea);color:var(--gris);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase}
 
-/* ---------- 05 · más de mí ---------- */
+/* ---------- 05 · evolución ---------- */
+.evo{padding:clamp(90px,13vw,200px) var(--pad);background:var(--asfalto-2);border-top:1px solid var(--linea)}
+.evo__head{display:flex;flex-direction:column;gap:18px;margin-bottom:clamp(30px,5vw,70px);max-width:60rem}
+.evo__head .mono{color:var(--gris)}
+.evo__head h2{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(2.6rem,7vw,7rem);line-height:.95}
+.evo__head h2 em{font-style:normal;color:var(--naranja)}
+.evo__head p{color:var(--gris);max-width:36rem}
+.evo__chart{margin-bottom:clamp(34px,5vw,70px)}
+.evo__chart svg{display:block;width:100%;height:auto;overflow:visible}
+.evo__cap{color:var(--gris);margin-top:6px;text-align:center}
+.evo__cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,28px)}
+.era{background:var(--asfalto);border:1px solid var(--linea);padding:clamp(20px,2.4vw,34px);display:flex;flex-direction:column;gap:14px;transition:transform .5s var(--ease),border-color .3s}
+.era:hover{transform:translateY(-6px);border-color:var(--naranja)}
+.era header{display:flex;justify-content:space-between;align-items:baseline;color:var(--gris)}
+.era__n{font-family:var(--display);font-size:2.4rem;color:var(--linea);line-height:1}
+.era h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(2rem,3vw,3rem);line-height:1}
+.era__when{font-size:1.7rem;margin-top:-6px}
+.bars{display:flex;flex-direction:column;gap:12px;margin:8px 0 4px}
+.bar{display:grid;grid-template-columns:6.8rem 1fr 3.4rem;align-items:center;gap:10px;font-size:.8125rem}
+.bar__l{font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--gris);font-size:.72rem}
+.bar__t{height:10px;background:var(--cemento);overflow:hidden;border-radius:6px}
+.bar__t i{display:block;height:100%;width:calc(var(--w)*100%);background:linear-gradient(90deg,var(--naranja),#FF8A4C);border-radius:6px;transform-origin:left}
+.bar__v{font-family:var(--display);font-weight:400;font-size:1.5rem;text-align:right;color:var(--tiza)}
+.era__txt{color:var(--gris);font-size:.95rem;margin-top:auto}
+@media (max-width:899px){.evo__cards{grid-template-columns:1fr}}
+@media (max-width:480px){.bar{grid-template-columns:5.6rem 1fr 3rem}}
+
+/* ---------- 06 · más de mí ---------- */
 .more{padding:clamp(90px,13vw,200px) var(--pad);background:var(--asfalto)}
 .more__head{display:flex;flex-direction:column;gap:18px;margin-bottom:clamp(36px,6vw,90px);max-width:60rem}
 .more__head .mono{color:var(--gris)}

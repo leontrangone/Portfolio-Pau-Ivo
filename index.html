@@ -48,6 +48,7 @@
     <a href="#cancha">En cancha</a>
     <a href="#valores">Valores</a>
     <a href="#numero">Mi número</a>
+    <a href="#evolucion">Evolución</a>
     <a href="#fotos">Fotos</a>
   </nav>
 </header>
@@ -211,10 +212,73 @@
   </div>
 </section>
 
-<!-- ======================= 05 · MÁS DE MÍ ======================= -->
+<!-- ======================= 05 · EVOLUCIÓN ======================= -->
+<section class="evo" id="evolucion">
+  <div class="evo__head">
+    <span class="mono">05 — Mi evolución</span>
+    <h2>Mis números<br><em>a través del tiempo</em></h2>
+    <p>Los promedios fueron creciendo año a año. Algunos son aproximados porque, cuando era chico, casi no se llevaban estadísticas.</p>
+  </div>
+  <div class="evo__chart">
+    <svg viewBox="0 0 900 380" role="img" aria-label="Gráfico: promedio de puntos por partido, de 12 en Telefonos a 15 en Obras y 17 en Náutico Buchardo">
+      <defs>
+        <linearGradient id="evoFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#FF5A1F" stop-opacity=".32"/><stop offset="1" stop-color="#FF5A1F" stop-opacity="0"/></linearGradient>
+      </defs>
+      <g class="evo__grid" stroke="#3A3B3F" stroke-width="1" stroke-dasharray="4 8">
+        <line x1="40" x2="860" y1="60" y2="60"/><line x1="40" x2="860" y1="140" y2="140"/><line x1="40" x2="860" y1="220" y2="220"/><line x1="40" x2="860" y1="300" y2="300"/>
+      </g>
+      <g font-family="DM Mono,monospace" font-size="15" fill="#9A9DA2" class="evo__ylab"><text x="40" y="52">20</text><text x="40" y="132">16</text><text x="40" y="212">12</text><text x="40" y="292">8</text></g>
+      <path class="evo__area" d="M120 215C250 215 320 160 450 160C580 160 650 118 780 118V300H120Z" fill="url(#evoFill)"/>
+      <path class="evo__line" pathLength="1" d="M120 215C250 215 320 160 450 160C580 160 650 118 780 118" fill="none" stroke="#FF5A1F" stroke-width="6" stroke-linecap="round"/>
+      <g class="evo__pt"><circle cx="120" cy="215" r="16" fill="#0E0E0F" stroke="#FF5A1F" stroke-width="5"/><text x="120" y="182" text-anchor="middle" font-family="Anton,Impact,sans-serif" font-size="46" fill="#F2ECDD">12</text></g>
+      <g class="evo__pt"><circle cx="450" cy="160" r="16" fill="#0E0E0F" stroke="#FF5A1F" stroke-width="5"/><text x="450" y="127" text-anchor="middle" font-family="Anton,Impact,sans-serif" font-size="46" fill="#F2ECDD">15</text></g>
+      <g class="evo__pt"><circle cx="780" cy="118" r="16" fill="#FF5A1F" stroke="#F2ECDD" stroke-width="5"/><text x="780" y="85" text-anchor="middle" font-family="Anton,Impact,sans-serif" font-size="46" fill="#F2ECDD">17</text></g>
+      <g font-family="DM Mono,monospace" font-size="16" fill="#F2ECDD" text-anchor="middle" letter-spacing="1.5" class="evo__xlab">
+        <text x="120" y="338">HASTA LOS 11</text><text x="450" y="338">A LOS 13</text><text x="780" y="338">DESDE 2023</text>
+      </g>
+    </svg>
+    <p class="evo__cap mono">Puntos por partido, aproximados</p>
+  </div>
+  <div class="evo__cards">
+      <article class="era" data-cursor>
+        <header><span class="era__n">01</span><span class="mono era__tag">Primeros pasos</span></header>
+        <h3>Club Telefonos</h3>
+        <p class="era__when hand">hasta los 11 años</p>
+        <div class="bars">
+        <div class="bar"><span class="bar__l">Puntos</span><span class="bar__t"><i style="--w:0.600"></i></span><b class="bar__v" data-count="12" data-pre="≈ ">≈ 12</b></div>
+        </div>
+        <p class="era__txt">Era chico y solo se contaban los puntos. Lo demás no se anotaba, pero se jugaba igual.</p>
+      </article>
+      <article class="era" data-cursor>
+        <header><span class="era__n">02</span><span class="mono era__tag">Una temporada</span></header>
+        <h3>Club Obras</h3>
+        <p class="era__when hand">a los 13 años</p>
+        <div class="bars">
+        <div class="bar"><span class="bar__l">Puntos</span><span class="bar__t"><i style="--w:0.750"></i></span><b class="bar__v" data-count="15" data-pre="">15</b></div>
+        <div class="bar"><span class="bar__l">Rebotes</span><span class="bar__t"><i style="--w:0.600"></i></span><b class="bar__v" data-count="6" data-pre="">6</b></div>
+        <div class="bar"><span class="bar__l">Asistencias</span><span class="bar__t"><i style="--w:0.500"></i></span><b class="bar__v" data-count="3" data-pre="">3</b></div>
+        <div class="bar"><span class="bar__l">Robos</span><span class="bar__t"><i style="--w:0.333"></i></span><b class="bar__v" data-count="1" data-pre="">1</b></div>
+        </div>
+        <p class="era__txt">24 partidos en todo el año. Mi primera vez con estadísticas completas.</p>
+      </article>
+      <article class="era" data-cursor>
+        <header><span class="era__n">03</span><span class="mono era__tag">Volver y crecer</span></header>
+        <h3>Náutico Buchardo</h3>
+        <p class="era__when hand">desde 2023</p>
+        <div class="bars">
+        <div class="bar"><span class="bar__l">Puntos</span><span class="bar__t"><i style="--w:0.850"></i></span><b class="bar__v" data-count="17" data-pre="≈ ">≈ 17</b></div>
+        <div class="bar"><span class="bar__l">Rebotes</span><span class="bar__t"><i style="--w:0.700"></i></span><b class="bar__v" data-count="7" data-pre="≈ ">≈ 7</b></div>
+        <div class="bar"><span class="bar__l">Asistencias</span><span class="bar__t"><i style="--w:0.667"></i></span><b class="bar__v" data-count="4" data-pre="≈ ">≈ 4</b></div>
+        </div>
+        <p class="era__txt">Promedios por temporada desde que volví al básquet.</p>
+      </article>
+  </div>
+</section>
+
+<!-- ======================= 06 · MÁS DE MÍ ======================= -->
 <section class="more" id="fotos">
   <div class="more__head">
-    <span class="mono">05 — Más de mí</span>
+    <span class="mono">06 — Más de mí</span>
     <h2>Más de mí,<br><em>en cancha</em></h2>
     <p>Algunos momentos que me quedaron: entrenando, jugando y también de cuando todo empezó.</p>
   </div>

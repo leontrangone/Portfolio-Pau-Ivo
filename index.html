@@ -49,6 +49,7 @@
     <a href="#valores">Valores</a>
     <a href="#numero">Mi número</a>
     <a href="#evolucion">Evolución</a>
+    <a href="#campus">Campus</a>
     <a href="#fotos">Fotos</a>
   </nav>
 </header>
@@ -59,19 +60,9 @@
 
 <!-- ======================= PORTADA ======================= -->
 <section class="hero" id="inicio">
-  <svg class="hero__court" viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-    <rect class="draw" pathLength="1" x="40" y="40" width="1320" height="720"/>
-    <path class="draw" pathLength="1" d="M700 40V760"/>
-    <circle class="draw" pathLength="1" cx="700" cy="400" r="120"/>
-    <rect class="draw" pathLength="1" x="40" y="270" width="330" height="260"/>
-    <rect class="draw" pathLength="1" x="1030" y="270" width="330" height="260"/>
-    <path class="draw" pathLength="1" d="M370 270A130 130 0 0 1 370 530"/>
-    <path class="draw" pathLength="1" d="M1030 270A130 130 0 0 0 1030 530"/>
-    <path class="draw" pathLength="1" d="M40 120H190A280 280 0 0 1 190 680H40"/>
-    <path class="draw" pathLength="1" d="M1360 120H1210A280 280 0 0 0 1210 680H1360"/>
-    <path class="draw dash" d="M370 270A130 130 0 0 0 370 530"/>
-    <path class="draw dash" d="M1030 270A130 130 0 0 1 1030 530"/>
-  </svg>
+  <div class="hero__bg" aria-hidden="true">
+    <img src="images/hero-leon.jpg" alt="" width="1170" height="903" fetchpriority="high" decoding="async">
+  </div>
 
   <div class="hero__ball" aria-hidden="true"><svg><use href="#ball"/></svg></div>
 
@@ -247,7 +238,6 @@
         <div class="bars">
         <div class="bar"><span class="bar__l">Puntos</span><span class="bar__t"><i style="--w:0.600"></i></span><b class="bar__v" data-count="12" data-pre="≈ ">≈ 12</b></div>
         </div>
-        <p class="era__txt">Era chico y solo se contaban los puntos. Lo demás no se anotaba, pero se jugaba igual.</p>
       </article>
       <article class="era" data-cursor>
         <header><span class="era__n">02</span><span class="mono era__tag">Una temporada</span></header>
@@ -275,37 +265,79 @@
   </div>
 </section>
 
-<!-- ======================= 06 · MÁS DE MÍ ======================= -->
+<!-- ======================= 06 · CAMPUS ======================= -->
+<section class="camps" id="campus">
+  <div class="camps__head">
+    <span class="mono">06 — Campus en el exterior</span>
+    <h2>Entrenar<br><em>afuera</em></h2>
+    <p>Tuve la chance de vivir tres experiencias en el exterior, en campus especializados de básquet, aprendiendo de entrenadores de primer nivel.</p>
+  </div>
+  <div class="camps__list">
+    <article class="camp" data-cursor>
+      <header><span class="camp__n">01</span><span class="mono camp__where">Miami · EE.UU.</span></header>
+      <h3>Guillermo Edgardo <em>Vecchio</em></h3>
+      <p class="camp__role">Entrenador profesional y cazatalentos argentino</p>
+      <ul class="camp__tags">
+        <li>DT de la Selección Argentina 1991–1996</li>
+        <li>Formador de la Generación Dorada</li>
+        <li>Scout de los Detroit Pistons</li>
+      </ul>
+      <p class="camp__txt">En Miami entrené con entrenadores muy copados y conocí jugadores estrella.</p>
+    </article>
+    <article class="camp" data-cursor>
+      <header><span class="camp__n">02</span><span class="mono camp__where">Orlando · EE.UU.</span></header>
+      <h3>Matías <span class="camp__nick">“Coco”</span> <em>Gallo</em></h3>
+      <p class="camp__role">Flowgame Basketball</p>
+      <ul class="camp__tags">
+        <li>Exjugador uruguayo</li>
+        <li>Entrenador</li>
+        <li>Speaker motivacional</li>
+      </ul>
+      <p class="camp__txt">Conocí entrenadores especializados muy buenos en todo tipo de características del juego.</p>
+    </article>
+    <article class="camp" data-cursor>
+      <header><span class="camp__n">03</span><span class="mono camp__where">Campus especializado</span></header>
+      <h3>Oscar Alberto <span class="camp__nick">“Huevo”</span> <em>Sánchez</em></h3>
+      <p class="camp__role">Histórico entrenador, formador y analista del básquet argentino</p>
+      <ul class="camp__tags">
+        <li>Campeón de la Liga Nacional</li>
+        <li>Décadas dirigiendo en Argentina</li>
+      </ul>
+      <p class="camp__txt">Vino con un grupo de entrenadores de muy alta calidad: uno para cada fundamento.</p>
+      <div class="camp__staff">
+        <span><b>Dribbling</b>especialista</span>
+        <span><b>Tiro</b>especialista</span>
+        <span><b>Defensa</b>el Huevo</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ======================= 07 · MÁS DE MÍ ======================= -->
 <section class="more" id="fotos">
   <div class="more__head">
-    <span class="mono">06 — Más de mí</span>
+    <span class="mono">07 — Más de mí</span>
     <h2>Más de mí,<br><em>en cancha</em></h2>
     <p>Algunos momentos que me quedaron: entrenando, jugando y también de cuando todo empezó.</p>
   </div>
   <div class="more__grid">
     <figure class="shot" data-cursor style="--r:-1.5deg">
       <div class="shot__img"><img src="images/mas-1.jpg" alt="Salto para tirar al aro en un entrenamiento" width="760" height="1351" loading="lazy" decoding="async"></div>
-      <figcaption class="hand">entrenando</figcaption>
     </figure>
     <figure class="shot" data-cursor style="--r:1.2deg">
       <div class="shot__img"><img src="images/mas-2.jpg" alt="Entrada a bandeja bajo el aro" width="760" height="1351" loading="lazy" decoding="async"></div>
-      <figcaption class="hand">a la bandeja</figcaption>
     </figure>
     <figure class="shot" data-cursor style="--r:-0.8deg">
       <div class="shot__img"><img src="images/mas-3.jpg" alt="Tiro en suspensión con un defensor encima" width="760" height="1351" loading="lazy" decoding="async"></div>
-      <figcaption class="hand">tirar con la mano en la cara</figcaption>
     </figure>
     <figure class="shot" data-cursor style="--r:1.6deg">
       <div class="shot__img"><img src="images/mas-4.jpg" alt="Llevando la pelota por la cancha" width="760" height="1351" loading="lazy" decoding="async"></div>
-      <figcaption class="hand">pensar la jugada</figcaption>
     </figure>
     <figure class="shot" data-cursor style="--r:-1.2deg">
       <div class="shot__img"><img src="images/mas-5.jpg" alt="Entrada a bandeja con la camiseta del club" width="760" height="1322" loading="lazy" decoding="async"></div>
-      <figcaption class="hand">en el club</figcaption>
     </figure>
     <figure class="shot" data-cursor style="--r:1deg">
       <div class="shot__img"><img src="images/mas-6.jpg" alt="De chico, driblando con la pelota" width="760" height="967" loading="lazy" decoding="async"></div>
-      <figcaption class="hand">así empecé</figcaption>
     </figure>
   </div>
 </section>

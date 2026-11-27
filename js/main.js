@@ -102,12 +102,10 @@
   const loader = $('.loader');
   const heroTitle = $('.hero__title');
   const chars = heroTitle ? splitChars(heroTitle) : [];
-  const drawn = $$('.hero__court .draw:not(.dash)');
-  const dashed = $$('.hero__court .dash');
+  const heroBg = $('.hero__bg img');
 
   gsap.set(chars, { yPercent: 118 });
-  gsap.set(drawn, { strokeDasharray: 1, strokeDashoffset: 1 });
-  gsap.set(dashed, { opacity: 0 });
+  if (heroBg) gsap.set(heroBg, { scale: 1.15, opacity: 0 });
   root.style.overflow = 'hidden';
   if (lenis) lenis.stop();
 
@@ -143,8 +141,7 @@
   /* ---------- portada ---------- */
   function heroIn() {
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-    tl.to(drawn, { strokeDashoffset: 0, duration: 2.4, stagger: 0.1, ease: 'power2.inOut' }, 0)
-      .to(dashed, { opacity: 1, duration: 1.2 }, 0.9)
+    tl.to(heroBg, { scale: 1, opacity: 1, duration: 2, ease: 'power2.out' }, 0)
       .to(chars, { yPercent: 0, duration: 1.1, stagger: 0.055, ease: 'power4.out' }, 0.1)
       .from('.eyebrow', { y: 20, opacity: 0, duration: 0.8 }, 0.3)
       .from('.hero__foot > *', { y: 24, opacity: 0, duration: 0.8, stagger: 0.1 }, 0.8)
@@ -164,8 +161,8 @@
       by(((e.clientY - r.top) / r.height - 0.5) * -34);
     });
   }
-  gsap.to('.hero__court', {
-    yPercent: 14, ease: 'none',
+  gsap.to('.hero__bg img', {
+    yPercent: 8, ease: 'none',
     scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: true }
   });
 
@@ -308,6 +305,16 @@
       gsap.to(o, { v: end, duration: 1.3, ease: 'power2.out', scrollTrigger: { trigger: card, start: 'top 80%' },
         onUpdate: () => { el.textContent = pre + Math.round(o.v); } });
     });
+  });
+
+  /* ---------- campus ---------- */
+  gsap.from('.camps__head > *', {
+    y: 40, opacity: 0, duration: 0.9, stagger: 0.12, ease: 'power3.out',
+    scrollTrigger: { trigger: '.camps__head', start: 'top 82%' }
+  });
+  gsap.from('.camp', {
+    y: 60, opacity: 0, duration: 0.9, stagger: 0.14, ease: 'power3.out',
+    scrollTrigger: { trigger: '.camps__list', start: 'top 85%' }
   });
 
   /* ---------- más de mí ---------- */
